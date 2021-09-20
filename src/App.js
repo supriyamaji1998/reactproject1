@@ -39,20 +39,20 @@ function App() {
       />
       <AlertsAPI alert={alert} />
       <Container>
-        <Router>
-          <Switch>
-            <Route exact path="/about">
+//         <Router>
+//           <Switch>
+//             <Route exact path="/about">
               <About />
-            </Route>
-            <Route exact path="/">
+//             </Route>
+//             <Route exact path="/">
               <TextForm
                 heading="Enter the text to analyze"
                 mode={mode}
                 showAlert={showAlert}
               />
-            </Route>
-          </Switch>
-        </Router>
+//             </Route>
+//           </Switch>
+//         </Router>
       </Container>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
-// import { Container } from "react-bootstrap";
 import { Navbar, Nav, Form } from "react-bootstrap";
-// import { Link } from "react-router-bootstrap";
+
 import { Link } from "react-router-dom";
 export default function NavbarBox(props) {
   return (

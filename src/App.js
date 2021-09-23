@@ -5,8 +5,8 @@ import AlertsAPI from "./components/AlertAPI";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./components/About";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import About from "./components/About";
 function App() {
   const [mode, setMode] = useState("light");
   const [alert, setAlert] = useState(null);

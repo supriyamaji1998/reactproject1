@@ -30,30 +30,29 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar
-        title="TextUtils"
-        navlist1="Home"
-        navlist2="About Us"
-        mode={mode}
-        tooglemode={tooglemode}
-      />
-      <AlertsAPI alert={alert} />
-      <Container>
-         {/* <Router>
-          <Switch>
-            <Route exact path="/about"> */}
-        <About />
-        {/* </Route> */}
-        {/* <Route exact path="/"> */}
-        <TextForm
-          heading="Enter the text to analyze"
+      <Router>
+        <Navbar
+          title="TextUtils"
+          navlist1="Home"
+          navlist2="About Us"
           mode={mode}
-          showAlert={showAlert}
+          tooglemode={tooglemode}
         />
-        {/* </Route> */}
-        {/* </Switch>
-        </Router> */}
-      </Container>
+        <AlertsAPI alert={alert} />
+        <Container>
+          <Switch>
+            <Route exact path="/about" component={About} />
+
+            <Route exact path="/">
+              <TextForm
+                heading="Enter the text to analyze"
+                mode={mode}
+                showAlert={showAlert}
+              />
+            </Route>
+          </Switch>
+        </Container>
+      </Router>
     </div>
   );
 }
